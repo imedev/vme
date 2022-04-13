@@ -1,0 +1,24 @@
+/*=========================================================================================
+  File Name: main.scss
+  Description: Main scss file. Imports other scss partials from 'vuesax' folder
+
+==========================================================================================*/
+
+@import "vuesax/variables";
+@import "vuesax/layout";
+
+@import "vuesax/typography";
+//@import "vuesax/extraComponents";
+@import "vuesax/extraComponents/vueSelect";
+@import "vuesax/extraComponents/datePicker";
+@import "vuesax/extraComponents/datetimePicker";
+@import "vuesax/themes";
+@import "vuesax/transitions";
+
+@import "vuesax/customClasses";
+
+// Vuesax fixes and enhancments
+@import "vuesax/fixesVuesax";
+
+// Tailwind Fixes
+@import "vuesax/tailwindFix";

@@ -1,0 +1,366 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, you should import this line from it's own file:
+ *
+ * @import "./tailwind-preflight.css";
+ *
+ * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ */
+/*NOTE: 'preflight' IS RENAMED TO 'base'*/
+/*@tailwind base;*/
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+ .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem
+}
+ @media (min-width: 576px) {
+    .container {
+        max-width: 576px
+    }
+}
+ @media (min-width: 768px) {
+    .container {
+        max-width: 768px
+    }
+}
+ @media (min-width: 992px) {
+    .container {
+        max-width: 992px
+    }
+}
+ @media (min-width: 1200px) {
+    .container {
+        max-width: 1200px
+    }
+}
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, you should import this line from it's own file:
+ *
+ * @import "./tailwind-utilities.css";
+ *
+ * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ */
+.static {
+    position: static !important
+}
+.absolute {
+    position: absolute !important
+}
+.relative {
+    position: relative !important
+}
+.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important
+}
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important
+}
+.mx-4 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important
+}
+.mt-1 {
+    margin-top: 0.25rem !important
+}
+.mr-3 {
+    margin-right: 0.75rem !important
+}
+.mt-6 {
+    margin-top: 1.5rem !important
+}
+.mb-0 {
+    margin-bottom: 0 !important
+}
+.mt-5 {
+    margin-top: 1.25rem !important
+}
+.mr-4 {
+    margin-right: 1rem !important
+}
+.mr-6 {
+    margin-right: 1.5rem !important
+}
+.mb-4 {
+    margin-bottom: 1rem !important
+}
+.mb-12 {
+    margin-bottom: 3rem !important
+}
+.mb-8 {
+    margin-bottom: 2rem !important
+}
+.mr-2 {
+    margin-right: 0.5rem !important
+}
+.ml-2 {
+    margin-left: 0.5rem !important
+}
+.ml-4 {
+    margin-left: 1rem !important
+}
+.mr-1 {
+    margin-right: 0.25rem !important
+}
+.flex {
+    display: flex !important
+}
+.table {
+    display: table !important
+}
+.hidden {
+    display: none !important
+}
+.h-4 {
+    height: 1rem !important
+}
+.h-5 {
+    height: 1.25rem !important
+}
+.h-screen {
+    height: 100vh !important
+}
+.w-4 {
+    width: 1rem !important
+}
+.w-5 {
+    width: 1.25rem !important
+}
+.w-64 {
+    width: 16rem !important
+}
+.w-full {
+    width: 100% !important
+}
+.w-32 {
+    width: 8rem !important
+}
+.max-w-full {
+    max-width: 100% !important
+}
+.flex-grow {
+    flex-grow: 1 !important
+}
+.border-collapse {
+    border-collapse: collapse !important
+}
+.transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important
+}
+.cursor-pointer {
+    cursor: pointer !important
+}
+.select-none {
+    -webkit-user-select: none !important;
+       -moz-user-select: none !important;
+        -ms-user-select: none !important;
+            user-select: none !important
+}
+.resize {
+    resize: both !important
+}
+.flex-col {
+    flex-direction: column !important
+}
+.flex-wrap {
+    flex-wrap: wrap !important
+}
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse !important
+}
+.items-center {
+    align-items: center !important
+}
+.justify-center {
+    justify-content: center !important
+}
+.justify-between {
+    justify-content: space-between !important
+}
+.overflow-hidden {
+    overflow: hidden !important
+}
+.truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important
+}
+.rounded-full {
+    border-radius: 9999px !important
+}
+.rounded-lg {
+    border-radius: .5rem !important
+}
+.rounded-none {
+    border-radius: 0 !important
+}
+.border-t-0 {
+    border-top-width: 0 !important
+}
+.border-r-0 {
+    border-right-width: 0 !important
+}
+.border-l-0 {
+    border-left-width: 0 !important
+}
+.border-solid {
+    border-style: solid !important
+}
+.stroke-current {
+    stroke: currentColor !important
+}
+.p-6 {
+    padding: 1.5rem !important
+}
+.p-4 {
+    padding: 1rem !important
+}
+.p-3 {
+    padding: 0.75rem !important
+}
+.px-6 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important
+}
+.text-center {
+    text-align: center !important
+}
+.text-xs {
+    font-size: .75rem !important
+}
+.text-sm {
+    font-size: .875rem !important
+}
+.text-5xl {
+    font-size: 3rem !important
+}
+.text-lg {
+    font-size: 1.125rem !important
+}
+.text-base {
+    font-size: 1rem !important
+}
+.font-medium {
+    font-weight: 500 !important
+}
+.capitalize {
+    text-transform: capitalize !important
+}
+.text-white {
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+}
+.opacity-75 {
+    opacity: 0.75 !important
+}
+.shadow-drop {
+    --tw-shadow: 0 2px 8px 0 rgba(0,0,0,0.14) !important;
+    --tw-shadow-colored: 0 2px 8px 0 var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+.shadow-md {
+    --tw-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08) !important;
+    --tw-shadow-colored: 0 4px 8px 0 var(--tw-shadow-color), 0 2px 4px 0 var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+.drop-shadow {
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06)) !important;
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important
+}
+.filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important
+}
+.transition {
+    transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter !important;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important
+}
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+@media (min-width: 576px) {
+    .sm\:mx-0 {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+    .sm\:mb-16 {
+        margin-bottom: 4rem !important
+    }
+    .sm\:mb-0 {
+        margin-bottom: 0 !important
+    }
+    .sm\:block {
+        display: block !important
+    }
+    .sm\:w-1\/2 {
+        width: 50% !important
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:mb-0 {
+        margin-bottom: 0 !important
+    }
+    .md\:w-3\/5 {
+        width: 60% !important
+    }
+    .md\:w-1\/4 {
+        width: 25% !important
+    }
+}
+
+@media (min-width: 992px) {
+    .lg\:w-3\/4 {
+        width: 75% !important
+    }
+}
+
+@media (min-width: 1200px) {
+    .xl\:w-1\/2 {
+        width: 50% !important
+    }
+}
+
